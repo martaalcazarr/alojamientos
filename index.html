@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra__logo">
+                <p class="barra__nombre">Trippy</p>
+            </div>
+
+            <nav class="barra__navegacion">
+                <a class="barra__link" href="#">Hospedaje</a>
+                <a class="barra__link" href="#">Experiencias</a>
+                <a class="barra__link" href="#">Visita en línea</a>
+            </nav>
+
+            <nav class="barra__login">
+                <a class="barra__link" href="#">Hospeda a otros</a>
+            </nav>
+        </div>
+
+        <form class="formulario contenedor">
+            <div class="formulario__campo">
+                <label class="formulario__label" for="destino">Destino</label>
+                <input type="text" class="formulario__input" id="destino" placeholder="¿Dónde quieres ir?">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="llegada">Llegada</label>
+                <input type="date" class="formulario__input" id="llegada">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="salida">Salida</label>
+                <input type="date" class="formulario__input" id="salida">
+            </div>
+
+            <div class="formulario__campo">
+                <label class="formulario__label" for="personas">Personas</label>
+                <input type="number" class="formulario__input" id="personas" placeholder="¿Cuántos serán?">
+            </div>
+
+            <div class="formulario__campo">
+                <input type="submit" class="formulario__submit" value="Buscar">
+            </div>
+        </form>
+
+        <div class="header__busqueda contenedor">
+            <p class="header__busqueda--label">¿No sabes dónde ir?</p>
+            <a href="#" class="header__busqueda--boton">Mostrar sugerencias</a>
+        </div>
+
+    </header>
+</body>
+</html>
