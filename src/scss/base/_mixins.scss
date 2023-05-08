@@ -40,3 +40,21 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin scrollHorizontal{
+         //para tener el scroll horizontal solo en esta sección, oculto 
+        //el overflow vertical pero no el horizontal
+        overflow-y: hidden;
+        overflow-x: scroll;
+        //tipo de scroll del grid
+        scroll-snap-type: x mandatory;
+
+        //para que utilice el primer nivel de hijo
+        > * {
+        //le digo que una vez haga snap, como lo alineo
+        scroll-snap-align: center;
+        }
+        @include tablet {
+            overflow-x: auto;
+        }
+}
